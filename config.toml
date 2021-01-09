@@ -1,0 +1,70 @@
+# This is a TOML document.
+
+title = "TOML Example"
+# macvlan, vxlan, gre
+tunnel_mode = "vxlan"
+
+scheduler = true
+bindaddress = "0.0.0.0:8083"
+remapper = true
+metiscmd = true
+
+[database]
+server = "localhost:3306"
+user = "root"
+pass = "welcome"
+database = "nettopd_go"
+
+[configDatabase]
+server = "192.168.311.171:3306"
+user = "root"
+pass = "123456"
+database = "nettop"
+
+[schedulerParams]
+CPU_ALPHA  = 100
+MEM_ALPHA  = 0
+DISK_ALPHA = 0
+
+SERVER_KR = 30000
+
+ROUTER_CPU  = 1
+ROUTER_MEM  = 1
+ROUTER_DISK = 1
+
+SWITCH_CPU  = 1
+SWITCH_MEM  = 1
+SWITCH_DISK = 1
+
+HOST_CPU  = 1
+HOST_MEM  = 1
+HOST_DISK = 1
+
+[podParams]
+collectDelta = 60
+
+[nodeParams]
+collectDelta = 10
+
+
+
+
+[tservers]
+
+  # Indentation (tabs and/or spaces) is allowed but not required
+  [tservers.alpha]
+  ip = "10.0.0.1"
+  dc = "eqdc10"
+
+  [tservers.beta]
+  ip = "10.0.0.2"
+  dc = "eqdc10"
+
+[clients]
+data = [ ["gamma", "delta"], [1, 2] ]
+
+# Line breaks are OK when inside arrays
+hosts = [
+  "alpha",
+  "omega"
+]

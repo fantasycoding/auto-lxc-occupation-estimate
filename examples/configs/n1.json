@@ -1,0 +1,475 @@
+{
+  "netid": "n1",
+  "routers": [
+    {
+      "category": "VirRouter",
+      "name": "r1",
+      "interfaces": [
+        {
+          "name": "r1-eth0",
+          "ip": "100.0.101.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r1-eth1",
+          "ip": "100.0.1.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r1-eth2",
+          "ip": "100.0.6.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r1-eth3",
+          "ip": "100.0.201.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r2",
+      "interfaces": [
+        {
+          "name": "r2-eth0",
+          "ip": "100.0.102.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r2-eth1",
+          "ip": "100.0.1.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r2-eth2",
+          "ip": "100.0.2.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r2-eth3",
+          "ip": "100.0.202.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r3",
+      "interfaces": [
+        {
+          "name": "r3-eth0",
+          "ip": "100.0.103.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r3-eth1",
+          "ip": "100.0.2.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r3-eth2",
+          "ip": "100.0.3.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r3-eth3",
+          "ip": "100.0.203.1/24"
+        },
+        {
+          "name": "r3-eth4",
+          "ip": "100.0.208.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r4",
+      "interfaces": [
+        {
+          "name": "r4-eth0",
+          "ip": "100.0.104.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r4-eth1",
+          "ip": "100.0.3.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r4-eth2",
+          "ip": "100.0.4.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r4-eth3",
+          "ip": "100.0.204.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r5",
+      "interfaces": [
+        {
+          "name": "r5-eth0",
+          "ip": "100.0.105.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r5-eth1",
+          "ip": "100.0.4.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r5-eth2",
+          "ip": "100.0.5.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r5-eth3",
+          "ip": "100.0.205.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r6",
+      "interfaces": [
+        {
+          "name": "r6-eth0",
+          "ip": "100.0.106.1",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r6-eth1",
+          "ip": "100.0.5.2",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r6-eth2",
+          "ip": "100.0.6.1",
+          "mask": "24",
+          "bw": "1000"
+        },
+        {
+          "name": "r6-eth3",
+          "ip": "100.0.206.1/24"
+        },
+        {
+          "name": "r6-eth4",
+          "ip": "100.0.207.1/24"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    },
+    {
+      "category": "VirRouter",
+      "name": "r7",
+      "interfaces": [
+        {
+          "name": "r7-eth0",
+          "ip": "100.0.101.2",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r7-eth1",
+          "ip": "100.0.102.2",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r7-eth2",
+          "ip": "100.0.103.2",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r7-eth3",
+          "ip": "100.0.104.2",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r7-eth4",
+          "ip": "100.0.105.2",
+          "mask": "24",
+          "bw": "10000"
+        },
+        {
+          "name": "r7-eth5",
+          "ip": "100.0.106.2",
+          "mask": "24",
+          "bw": "10000"
+        }
+      ],
+      "routings": {
+        "ospf": [
+          "network 0.0.0.0/0"
+        ]
+      }
+    }
+  ],
+  "switches": null,
+  "hosts": [
+    {
+      "category": "AlpineBase",
+      "name": "h1",
+      "interfaces": [
+        {
+          "name": "h1-eth0",
+          "ip": "100.0.201.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGSend",
+          "value": "-T UDP -a 100.0.204.2 -c 100 -C 10 -t 15000"
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h2",
+      "interfaces": [
+        {
+          "name": "h2-eth0",
+          "ip": "100.0.202.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGSend",
+          "value": "-T UDP -a 100.0.205.2 -c 100 -C 10 -t 15000"
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h3",
+      "interfaces": [
+        {
+          "name": "h3-eth0",
+          "ip": "100.0.203.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGSend",
+          "value": "-T UDP -a 100.0.206.2 -c 100 -C 10 -t 15000"
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h4",
+      "interfaces": [
+        {
+          "name": "h4-eth0",
+          "ip": "100.0.204.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGRecv",
+          "value": null
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h5",
+      "interfaces": [
+        {
+          "name": "h5-eth0",
+          "ip": "100.0.205.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGRecv",
+          "value": null
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h6",
+      "interfaces": [
+        {
+          "name": "h6-eth0",
+          "ip": "100.0.206.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "ITGRecv",
+          "value": null
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h7",
+      "interfaces": [
+        {
+          "name": "h7-eth0",
+          "ip": "100.0.207.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "apache2ctl",
+          "value": "start"
+        }
+      ]
+    },
+    {
+      "category": "AlpineBase",
+      "name": "h8",
+      "interfaces": [
+        {
+          "name": "h8-eth0",
+          "ip": "100.0.208.2/24"
+        }
+      ],
+      "apps": [
+        {
+          "key": "echo",
+          "value": "100.0.207.2    isp.test &gt;&gt; /etc/hosts"
+        },
+        {
+          "key": "service",
+          "value": "dnsmasq start"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "r1-eth0",
+      "to": "r7-eth0"
+    },
+    {
+      "from": "r2-eth0",
+      "to": "r7-eth1"
+    },
+    {
+      "from": "r3-eth0",
+      "to": "r7-eth2"
+    },
+    {
+      "from": "r4-eth0",
+      "to": "r7-eth3"
+    },
+    {
+      "from": "r5-eth0",
+      "to": "r7-eth4"
+    },
+    {
+      "from": "r6-eth0",
+      "to": "r7-eth5"
+    },
+    {
+      "from": "r1-eth1",
+      "to": "r2-eth1"
+    },
+    {
+      "from": "r2-eth2",
+      "to": "r3-eth1"
+    },
+    {
+      "from": "r3-eth2",
+      "to": "r4-eth1"
+    },
+    {
+      "from": "r4-eth2",
+      "to": "r5-eth1"
+    },
+    {
+      "from": "r5-eth2",
+      "to": "r6-eth1"
+    },
+    {
+      "from": "r6-eth2",
+      "to": "r1-eth2"
+    },
+    {
+      "from": "h1-eth0",
+      "to": "r1-eth3"
+    },
+    {
+      "from": "h2-eth0",
+      "to": "r2-eth3"
+    },
+    {
+      "from": "h3-eth0",
+      "to": "r3-eth3"
+    },
+    {
+      "from": "h4-eth0",
+      "to": "r4-eth3"
+    },
+    {
+      "from": "h5-eth0",
+      "to": "r5-eth3"
+    },
+    {
+      "from": "h6-eth0",
+      "to": "r6-eth3"
+    },
+    {
+      "from": "h7-eth0",
+      "to": "r6-eth4"
+    },
+    {
+      "from": "h8-eth0",
+      "to": "r3-eth4"
+    }
+  ]
+}

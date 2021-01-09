@@ -1,0 +1,550 @@
+{
+    "switches": [], 
+    "routers": [
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.16.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r4-eth0"
+                }, 
+                {
+                    "ip": "10.0.9.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r4-eth1"
+                }, 
+                {
+                    "ip": "10.0.2.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r4-eth2"
+                }, 
+                {
+                    "ip": "10.0.17.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r4-eth3"
+                }, 
+                {
+                    "ip": "10.0.19.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r4-eth4"
+                }
+            ], 
+            "name": "r4", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.4.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r5-eth0"
+                }, 
+                {
+                    "ip": "10.0.18.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r5-eth1"
+                }
+            ], 
+            "name": "r5", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.12.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r6-eth0"
+                }, 
+                {
+                    "ip": "10.0.9.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r6-eth1"
+                }, 
+                {
+                    "ip": "10.0.25.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r6-eth2"
+                }
+            ], 
+            "name": "r6", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.11.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r7-eth0"
+                }, 
+                {
+                    "ip": "10.0.6.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r7-eth1"
+                }
+            ], 
+            "name": "r7", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.10.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r0-eth0"
+                }, 
+                {
+                    "ip": "10.0.4.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r0-eth1"
+                }, 
+                {
+                    "ip": "10.0.12.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r0-eth2"
+                }
+            ], 
+            "name": "r0", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.10.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r1-eth0"
+                }, 
+                {
+                    "ip": "10.0.1.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r1-eth1"
+                }, 
+                {
+                    "ip": "10.0.7.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r1-eth2"
+                }, 
+                {
+                    "ip": "10.0.23.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r1-eth3"
+                }
+            ], 
+            "name": "r1", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.16.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r2-eth0"
+                }, 
+                {
+                    "ip": "10.0.15.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r2-eth1"
+                }
+            ], 
+            "name": "r2", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.14.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r3-eth0"
+                }, 
+                {
+                    "ip": "10.0.18.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r3-eth1"
+                }
+            ], 
+            "name": "r3", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.6.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r11-eth0"
+                }, 
+                {
+                    "ip": "10.0.20.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r11-eth1"
+                }, 
+                {
+                    "ip": "10.0.22.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r11-eth2"
+                }
+            ], 
+            "name": "r11", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.1.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r8-eth0"
+                }, 
+                {
+                    "ip": "10.0.15.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r8-eth1"
+                }, 
+                {
+                    "ip": "10.0.14.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r8-eth2"
+                }, 
+                {
+                    "ip": "10.0.2.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r8-eth3"
+                }, 
+                {
+                    "ip": "10.0.24.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r8-eth4"
+                }
+            ], 
+            "name": "r8", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.7.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r9-eth0"
+                }, 
+                {
+                    "ip": "10.0.21.1", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r9-eth1"
+                }
+            ], 
+            "name": "r9", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }, 
+        {
+            "category": "VirRouter", 
+            "interfaces": [
+                {
+                    "ip": "10.0.17.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r10-eth0"
+                }, 
+                {
+                    "ip": "10.0.18.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r10-eth1"
+                }, 
+                {
+                    "ip": "10.0.11.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "r10-eth2"
+                }
+            ], 
+            "name": "r10", 
+            "routings": {
+                "ospf": [
+                    "network 0.0.0.0/0 area 0"
+                ]
+            }
+        }
+    ], 
+    "hosts": [
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.18.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h2-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h2"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.19.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h3-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h3"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.20.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h0-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h0"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.21.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h1-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h1"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.22.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h6-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h6"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.23.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h7-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h7"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.24.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h4-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h4"
+        }, 
+        {
+            "category": "AlpineBase", 
+            "interfaces": [
+                {
+                    "ip": "10.0.25.2", 
+                    "bw": "1000", 
+                    "mask": "24", 
+                    "name": "h5-eth0"
+                }
+            ], 
+            "apps": [], 
+            "name": "h5"
+        }
+    ], 
+    "links": [
+        {
+            "to": "r1-eth0", 
+            "from": "r0-eth0"
+        }, 
+        {
+            "to": "r5-eth0", 
+            "from": "r0-eth1"
+        }, 
+        {
+            "to": "r6-eth0", 
+            "from": "r0-eth2"
+        }, 
+        {
+            "to": "r8-eth0", 
+            "from": "r1-eth1"
+        }, 
+        {
+            "to": "r9-eth0", 
+            "from": "r1-eth2"
+        }, 
+        {
+            "to": "h7-eth0", 
+            "from": "r1-eth3"
+        }, 
+        {
+            "to": "r4-eth0", 
+            "from": "r2-eth0"
+        }, 
+        {
+            "to": "r8-eth1", 
+            "from": "r2-eth1"
+        }, 
+        {
+            "to": "r8-eth2", 
+            "from": "r3-eth0"
+        }, 
+        {
+            "to": "h2-eth0", 
+            "from": "r3-eth1"
+        }, 
+        {
+            "to": "r6-eth1", 
+            "from": "r4-eth1"
+        }, 
+        {
+            "to": "r8-eth3", 
+            "from": "r4-eth2"
+        }, 
+        {
+            "to": "r10-eth0", 
+            "from": "r4-eth3"
+        }, 
+        {
+            "to": "h3-eth0", 
+            "from": "r4-eth4"
+        }, 
+        {
+            "to": "r10-eth1", 
+            "from": "r5-eth1"
+        }, 
+        {
+            "to": "h5-eth0", 
+            "from": "r6-eth2"
+        }, 
+        {
+            "to": "r10-eth2", 
+            "from": "r7-eth0"
+        }, 
+        {
+            "to": "r11-eth0", 
+            "from": "r7-eth1"
+        }, 
+        {
+            "to": "h4-eth0", 
+            "from": "r8-eth4"
+        }, 
+        {
+            "to": "h1-eth0", 
+            "from": "r9-eth1"
+        }, 
+        {
+            "to": "h0-eth0", 
+            "from": "r11-eth1"
+        }, 
+        {
+            "to": "h6-eth0", 
+            "from": "r11-eth2"
+        }
+    ], 
+    "netid": "tn20"
+}
