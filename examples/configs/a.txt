@@ -1,0 +1,33 @@
+nuaa@labserver5:~/dengli/nettopbuilder/examples/configs$ cd ..
+nuaa@labserver5:~/dengli/nettopbuilder/examples$ cd ..
+nuaa@labserver5:~/dengli/nettopbuilder$ ls
+aEiQKymYXrsYfhC9bc7QTyjtyXpGAMRg.log  file.txt       PY0s1mV87FQZ4zzsMYWQ6lVYbs6Wltzr.log  reset_nettopd_go.sql
+config.toml                           log.txt        README.md                             test.sh
+examples                              nettopbuilder  reset_all.sh
+nuaa@labserver5:~/dengli/nettopbuilder$ ./nettopbuilder
+parse toml file once. filePath: /home/nuaa/dengli/nettopbuilder/config.toml
+INFO[01-15|07:25:17] NodeManager                              Updating node resources...=
+^CINFO[01-15|07:25:22] Received 'interrupt signal', exiting
+INFO[01-15|07:25:22] Starting shutdown
+nuaa@labserver5:~/dengli/nettopbuilder$ tmux detach
+nuaa@labserver5:~/dengli/nettopbuilder$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

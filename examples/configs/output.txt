@@ -1,327 +1,218 @@
 cd ~/dengli/nettopbuilder&& ./nettopbuilder
-nuaa@labserver5:~/dengli/nettopbuilder/examples/configs$ cd ~/dengli/nettopbuilder&
-& ./nettopbuilder
+nuaa@labserver5:~/dengli/nettopbuilder/examples/configs$ cd ~/dengli/nettopbuilder&& ./nettopbuilder
 parse toml file once. filePath: /home/nuaa/dengli/nettopbuilder/config.toml
-INFO[01-09|04:29:49] NodeManager                              Updating node resourc
-es...=
-INFO[01-09|04:29:49] Scheduler                                Resource Collector="&
-{CPU:0 MEM:0 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:29:52] STATUS                                   LOG15_ERROR= LOG15_ER
-ROR="Normalized odd number of arguments by adding nil"
-INFO[01-09|04:29:53] Worker n10-n10-192.168.31.15(create) started
-INFO[01-09|04:29:53] Worker                                   Create n10-192.168.31
-.15=Started
-INFO[01-09|04:29:53] Worker                                   Create n10-192.168.31
-.15="Create manage bridge"
-INFO[01-09|04:29:53] Worker                                   Create n10-192.168.31
-.15="Create node n10r0"
-INFO[01-09|04:29:54] Worker                                   Create n10-192.168.31
-.15="Create node n10r0 Manage Bridge"
-INFO[01-09|04:29:54] Worker                                   Create n10-192.168.31
-.15="Create node n10r0 Files"
-INFO[01-09|04:29:55] Worker                                   Create n10-192.168.31
-.15="Upload node n10r0 Files"
-INFO[01-09|04:29:55] Worker                                   Create n10-192.168.31
-.15="Create node n10r1"
-INFO[01-09|04:29:56] Worker                                   Create n10-192.168.31
-.15="Create node n10r1 Manage Bridge"
-INFO[01-09|04:29:56] Worker                                   Create n10-192.168.31
-.15="Create node n10r1 Files"
-INFO[01-09|04:29:56] Worker                                   Create n10-192.168.31
-.15="Upload node n10r1 Files"
-INFO[01-09|04:29:57] Worker                                   Create n10-192.168.31
-.15="Create node n10r2"
-INFO[01-09|04:29:58] Worker                                   Create n10-192.168.31
-.15="Create node n10r2 Manage Bridge"
-INFO[01-09|04:29:58] Worker                                   Create n10-192.168.31
-.15="Create node n10r2 Files"
-INFO[01-09|04:29:58] Worker                                   Create n10-192.168.31
-.15="Upload node n10r2 Files"
-INFO[01-09|04:29:59] Worker                                   Create n10-192.168.31
-.15="Create node n10r3"
-INFO[01-09|04:29:59] Scheduler                                Resource Collector="&
-{CPU:0 MEM:0 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:30:00] Worker                                   Create n10-192.168.31
-.15="Create node n10r3 Manage Bridge"
-INFO[01-09|04:30:00] Worker                                   Create n10-192.168.31
-.15="Create node n10r3 Files"
-INFO[01-09|04:30:00] Worker                                   Create n10-192.168.31
-.15="Upload node n10r3 Files"
-INFO[01-09|04:30:01] Worker                                   Create n10-192.168.31
-.15="Create node n10r4"
-INFO[01-09|04:30:02] Worker                                   Create n10-192.168.31
-.15="Create node n10r4 Manage Bridge"
-INFO[01-09|04:30:02] Worker                                   Create n10-192.168.31
-.15="Create node n10r4 Files"
-INFO[01-09|04:30:02] Worker                                   Create n10-192.168.31
-.15="Upload node n10r4 Files"
-INFO[01-09|04:30:03] Worker                                   Create n10-192.168.31
-.15="Create node n10r5"
-INFO[01-09|04:30:04] Worker                                   Create n10-192.168.31
-.15="Create node n10r5 Manage Bridge"
-INFO[01-09|04:30:04] Worker                                   Create n10-192.168.31
-.15="Create node n10r5 Files"
-INFO[01-09|04:30:04] Worker                                   Create n10-192.168.31
-.15="Upload node n10r5 Files"
-INFO[01-09|04:30:05] Worker                                   Create n10-192.168.31
-.15="Create node n10h0"
-INFO[01-09|04:30:06] Worker                                   Create n10-192.168.31
-.15="Create node n10h0 Manage Bridge"
-INFO[01-09|04:30:06] Worker                                   Create n10-192.168.31
-.15="Create node n10h0 Files"
-INFO[01-09|04:30:06] Worker                                   Create n10-192.168.31
-.15="Upload node n10h0 Files"
-INFO[01-09|04:30:06] Worker                                   Create n10-192.168.31
-.15="Create node n10h1"
-INFO[01-09|04:30:07] Worker                                   Create n10-192.168.31
-.15="Create node n10h1 Manage Bridge"
-INFO[01-09|04:30:07] Worker                                   Create n10-192.168.31
-.15="Create node n10h1 Files"
-INFO[01-09|04:30:07] Worker                                   Create n10-192.168.31
-.15="Upload node n10h1 Files"
-INFO[01-09|04:30:07] Worker                                   Create n10-192.168.31
-.15="Create node n10h2"
-INFO[01-09|04:30:08] Worker                                   Create n10-192.168.31
-.15="Create node n10h2 Manage Bridge"
-INFO[01-09|04:30:08] Worker                                   Create n10-192.168.31
-.15="Create node n10h2 Files"
-INFO[01-09|04:30:08] Worker                                   Create n10-192.168.31
-.15="Upload node n10h2 Files"
-INFO[01-09|04:30:08] Worker                                   Create n10-192.168.31
-.15="Create node n10h3"
-INFO[01-09|04:30:09] Worker                                   Create n10-192.168.31
-.15="Create node n10h3 Manage Bridge"
-INFO[01-09|04:30:09] Worker                                   Create n10-192.168.31
-.15="Create node n10h3 Files"
-INFO[01-09|04:30:09] Worker                                   Create n10-192.168.31
-.15="Upload node n10h3 Files"
-INFO[01-09|04:30:10] Worker                                   Create n10-192.168.31
-.15="Attach n10r0"
-INFO[01-09|04:30:10] Worker                                   Create n10-192.168.31
-.15="Attach n10r4"
+INFO[01-15|09:24:34] NodeManager                              Updating node resources...=
+INFO[01-15|09:24:34] Scheduler                                Resource Collector="&{CPU:0 MEM:0 DISK:0 KeyResource:0}" Serve
+r=192.168.31.15
+INFO[01-15|09:24:38] STATUS                                   LOG15_ERROR= LOG15_ERROR="Normalized odd number of arguments b
+y adding nil"
+INFO[01-15|09:24:38] Worker n10-n10-192.168.31.15(create) started
+INFO[01-15|09:24:38] Worker                                   Create n10-192.168.31.15=Started
+INFO[01-15|09:24:38] Worker                                   Create n10-192.168.31.15="Create manage bridge"
+INFO[01-15|09:24:38] Worker                                   Create n10-192.168.31.15="Create node n10r0"
+INFO[01-15|09:24:39] Worker                                   Create n10-192.168.31.15="Create node n10r0 Manage Bridge"
+INFO[01-15|09:24:39] Worker                                   Create n10-192.168.31.15="Create node n10r0 Files"
+INFO[01-15|09:24:40] Worker                                   Create n10-192.168.31.15="Upload node n10r0 Files"
+INFO[01-15|09:24:40] Worker                                   Create n10-192.168.31.15="Create node n10r1"
+INFO[01-15|09:24:41] Worker                                   Create n10-192.168.31.15="Create node n10r1 Manage Bridge"
+INFO[01-15|09:24:41] Worker                                   Create n10-192.168.31.15="Create node n10r1 Files"
+INFO[01-15|09:24:41] Worker                                   Create n10-192.168.31.15="Upload node n10r1 Files"
+INFO[01-15|09:24:42] Worker                                   Create n10-192.168.31.15="Create node n10r2"
+INFO[01-15|09:24:42] Worker                                   Create n10-192.168.31.15="Create node n10r2 Manage Bridge"
+INFO[01-15|09:24:42] Worker                                   Create n10-192.168.31.15="Create node n10r2 Files"
+INFO[01-15|09:24:43] Worker                                   Create n10-192.168.31.15="Upload node n10r2 Files"
+INFO[01-15|09:24:43] Worker                                   Create n10-192.168.31.15="Create node n10r3"
+INFO[01-15|09:24:44] Worker                                   Create n10-192.168.31.15="Create node n10r3 Manage Bridge"
+INFO[01-15|09:24:44] Worker                                   Create n10-192.168.31.15="Create node n10r3 Files"
+INFO[01-15|09:24:44] Scheduler                                Resource Collector="&{CPU:0 MEM:0 DISK:0 KeyResource:0}" Serve
+r=192.168.31.15
+INFO[01-15|09:24:45] Worker                                   Create n10-192.168.31.15="Upload node n10r3 Files"
+INFO[01-15|09:24:45] Worker                                   Create n10-192.168.31.15="Create node n10r4"
+INFO[01-15|09:24:46] Worker                                   Create n10-192.168.31.15="Create node n10r4 Manage Bridge"
+INFO[01-15|09:24:46] Worker                                   Create n10-192.168.31.15="Create node n10r4 Files"
+INFO[01-15|09:24:46] Worker                                   Create n10-192.168.31.15="Upload node n10r4 Files"
+INFO[01-15|09:24:47] Worker                                   Create n10-192.168.31.15="Create node n10r5"
+INFO[01-15|09:24:47] Worker                                   Create n10-192.168.31.15="Create node n10r5 Manage Bridge"
+INFO[01-15|09:24:48] Worker                                   Create n10-192.168.31.15="Create node n10r5 Files"
+INFO[01-15|09:24:48] Worker                                   Create n10-192.168.31.15="Upload node n10r5 Files"
+INFO[01-15|09:24:49] Worker                                   Create n10-192.168.31.15="Create node n10h0"
+INFO[01-15|09:24:49] Worker                                   Create n10-192.168.31.15="Create node n10h0 Manage Bridge"
+INFO[01-15|09:24:49] Worker                                   Create n10-192.168.31.15="Create node n10h0 Files"
+INFO[01-15|09:24:49] Worker                                   Create n10-192.168.31.15="Upload node n10h0 Files"
+INFO[01-15|09:24:50] Worker                                   Create n10-192.168.31.15="Create node n10h1"
+INFO[01-15|09:24:50] Worker                                   Create n10-192.168.31.15="Create node n10h1 Manage Bridge"
+INFO[01-15|09:24:50] Worker                                   Create n10-192.168.31.15="Create node n10h1 Files"
+INFO[01-15|09:24:50] Worker                                   Create n10-192.168.31.15="Upload node n10h1 Files"
+INFO[01-15|09:24:51] Worker                                   Create n10-192.168.31.15="Create node n10h2"
+INFO[01-15|09:24:51] Worker                                   Create n10-192.168.31.15="Create node n10h2 Manage Bridge"
+INFO[01-15|09:24:51] Worker                                   Create n10-192.168.31.15="Create node n10h2 Files"
+INFO[01-15|09:24:51] Worker                                   Create n10-192.168.31.15="Upload node n10h2 Files"
+INFO[01-15|09:24:52] Worker                                   Create n10-192.168.31.15="Create node n10h3"
+INFO[01-15|09:24:52] Worker                                   Create n10-192.168.31.15="Create node n10h3 Manage Bridge"
+INFO[01-15|09:24:52] Worker                                   Create n10-192.168.31.15="Create node n10h3 Files"
+INFO[01-15|09:24:52] Worker                                   Create n10-192.168.31.15="Upload node n10h3 Files"
+INFO[01-15|09:24:53] Worker                                   Create n10-192.168.31.15="Attach n10r0"
+INFO[01-15|09:24:53] Worker                                   Create n10-192.168.31.15="Attach n10r2"
 n10r0 n10r0-eth0 eth0
-n10r4 n10r4-eth0 eth0
-INFO[01-09|04:30:10] Worker                                   Create n10-192.168.31
-.15="Attach n10r0"
-INFO[01-09|04:30:10] Worker                                   Create n10-192.168.31
-.15="Attach n10r5"
+n10r2 n10r2-eth0 eth0
+INFO[01-15|09:24:53] Worker                                   Create n10-192.168.31.15="Attach n10r0"
+INFO[01-15|09:24:53] Worker                                   Create n10-192.168.31.15="Attach n10r5"
 n10r0 n10r0-eth1 eth1
-INFO[01-09|04:30:10] Scheduler                                Resource Collector="&
-{CPU:0 MEM:0 DISK:0 KeyResource:0}" Server=192.168.31.15
 n10r5 n10r5-eth0 eth0
-INFO[01-09|04:30:11] Worker                                   Create n10-192.168.31
-.15="Attach n10r0"
-INFO[01-09|04:30:11] Worker                                   Create n10-192.168.31
-.15="Attach n10h3"
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10r0"
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10h3"
 n10r0 n10r0-eth2 eth2
 n10h3 n10h3-eth0 eth0
-INFO[01-09|04:30:11] Worker                                   Create n10-192.168.31
-.15="Attach n10r1"
-INFO[01-09|04:30:11] Worker                                   Create n10-192.168.31
-.15="Attach n10r5"
-n10r1 n10r1-eth0 eth0
-n10r5 n10r5-eth1 eth1
-INFO[01-09|04:30:12] Worker                                   Create n10-192.168.31
-.15="Attach n10r2"
-INFO[01-09|04:30:12] Worker                                   Create n10-192.168.31
-.15="Attach n10r5"
-n10r2 n10r2-eth0 eth0
-n10r5 n10r5-eth2 eth2
-INFO[01-09|04:30:12] Worker                                   Create n10-192.168.31
-.15="Attach n10r2"
-INFO[01-09|04:30:12] Worker                                   Create n10-192.168.31
-.15="Attach n10h2"
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10r2"
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10r3"
 n10r2 n10r2-eth1 eth1
-n10h2 n10h2-eth0 eth0
-INFO[01-09|04:30:13] Worker                                   Create n10-192.168.31
-.15="Attach n10r3"
-INFO[01-09|04:30:13] Worker                                   Create n10-192.168.31
-.15="Attach n10h0"
 n10r3 n10r3-eth0 eth0
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10r2"
+INFO[01-15|09:24:54] Worker                                   Create n10-192.168.31.15="Attach n10h0"
+n10r2 n10r2-eth2 eth2
 n10h0 n10h0-eth0 eth0
-INFO[01-09|04:30:13] Worker                                   Create n10-192.168.31
-.15="Attach n10r4"
-INFO[01-09|04:30:13] Worker                                   Create n10-192.168.31
-.15="Attach n10r5"
-n10r4 n10r4-eth1 eth1
-n10r5 n10r5-eth3 eth3
-INFO[01-09|04:30:14] Worker                                   Create n10-192.168.31
-.15="Attach n10r4"
-INFO[01-09|04:30:14] Worker                                   Create n10-192.168.31
-.15="Attach n10h1"
-n10r4 n10r4-eth2 eth2
+INFO[01-15|09:24:55] Worker                                   Create n10-192.168.31.15="Attach n10r2"
+INFO[01-15|09:24:55] Worker                                   Create n10-192.168.31.15="Attach n10h1"
+n10r2 n10r2-eth3 eth3
 n10h1 n10h1-eth0 eth0
-INFO[01-09|04:30:14] Worker                                   Create n10-192.168.31
-.15=Done
-INFO[01-09|04:30:14] Worker n10(create) done
-INFO[01-09|04:30:14] NETID                                    n10=nil LOG15_ERROR="
-Normalized odd number of arguments by adding nil"
-EROR[01-09|04:30:14] PodManager                               UpdateConfigDbAppStat
-us="dial tcp: lookup 192.168.311.171: no such host"
-INFO[01-09|04:30:15] STATUS                                   LOG15_ERROR= LOG15_ER
-ROR="Normalized odd number of arguments by adding nil"
-INFO[01-09|04:30:15] Worker n10-n10-192.168.31.15(start) started
-INFO[01-09|04:30:15] Worker                                   Start n10-192.168.31.
-15=Started
-INFO[01-09|04:30:15] Worker                                   Start n10-192.168.31.
-15="Start n10r0"
-INFO[01-09|04:30:17] Worker                                   Start n10-192.168.31.
-15="Run n10r0 init script"
+INFO[01-15|09:24:55] Scheduler                                Resource Collector="&{CPU:0 MEM:0 DISK:0 KeyResource:0}" Serve
+r=192.168.31.15
+INFO[01-15|09:24:55] Worker                                   Create n10-192.168.31.15="Attach n10r3"
+INFO[01-15|09:24:55] Worker                                   Create n10-192.168.31.15="Attach n10r5"
+n10r3 n10r3-eth1 eth1
+n10r5 n10r5-eth1 eth1
+INFO[01-15|09:24:56] Worker                                   Create n10-192.168.31.15="Attach n10r4"
+INFO[01-15|09:24:56] Worker                                   Create n10-192.168.31.15="Attach n10h2"
+n10r4 n10r4-eth0 eth0
+n10h2 n10h2-eth0 eth0
+INFO[01-15|09:24:56] Worker                                   Create n10-192.168.31.15=Done
+INFO[01-15|09:24:56] Worker n10(create) done
+INFO[01-15|09:24:56] NETID                                    n10=nil LOG15_ERROR="Normalized odd number of arguments by add
+ing nil"
+EROR[01-15|09:24:56] PodManager                               UpdateConfigDbAppStatus="dial tcp: lookup 192.168.311.171: no
+such host"
+INFO[01-15|09:25:05] STATUS                                   LOG15_ERROR= LOG15_ERROR="Normalized odd number of arguments b
+y adding nil"
+INFO[01-15|09:25:05] Worker n10-n10-192.168.31.15(start) started
+INFO[01-15|09:25:05] Worker                                   Start n10-192.168.31.15=Started
+INFO[01-15|09:25:05] Worker                                   Start n10-192.168.31.15="Start n10r0"
+INFO[01-15|09:25:06] Worker                                   Start n10-192.168.31.15="Run n10r0 init script"
+INFO[01-15|09:25:07] Scheduler                                Resource Collector="&{CPU:0 MEM:9576448 DISK:0 KeyResource:0}"
+ Server=192.168.31.15
 Started watchfrr
 Cannot find device "root"
 Cannot find device "root"
 Cannot find device "root"
-INFO[01-09|04:30:18] Worker                                   Start n10-192.168.31.
-15="Start n10r1"
-INFO[01-09|04:30:19] Worker                                   Start n10-192.168.31.
-15="Run n10r1 init script"
+INFO[01-15|09:25:07] Worker                                   Start n10-192.168.31.15="Start n10r1"
+INFO[01-15|09:25:08] Worker                                   Start n10-192.168.31.15="Run n10r1 init script"
 Started watchfrr
-Cannot find device "root"
-INFO[01-09|04:30:20] Worker                                   Start n10-192.168.31.
-15="Start n10r2"
-INFO[01-09|04:30:21] Worker                                   Start n10-192.168.31.
-15="Run n10r2 init script"
-INFO[01-09|04:30:22] Scheduler                                Resource Collector="&
-{CPU:0 MEM:139747328 DISK:0 KeyResource:0}" Server=192.168.31.15
-Started watchfrr
-Cannot find device "root"
-Cannot find device "root"
-INFO[01-09|04:30:23] Worker                                   Start n10-192.168.31.
-15="Start n10r3"
-INFO[01-09|04:30:25] Worker                                   Start n10-192.168.31.
-15="Run n10r3 init script"
-Started watchfrr
-Cannot find device "root"
-INFO[01-09|04:30:27] Worker                                   Start n10-192.168.31.
-15="Start n10r4"
-INFO[01-09|04:30:28] Worker                                   Start n10-192.168.31.
-15="Run n10r4 init script"
-Started watchfrr
-Cannot find device "root"
-Cannot find device "root"
-Cannot find device "root"
-INFO[01-09|04:30:29] Worker                                   Start n10-192.168.31.
-15="Start n10r5"
-INFO[01-09|04:30:31] Worker                                   Start n10-192.168.31.
-15="Run n10r5 init script"
+INFO[01-15|09:25:10] Worker                                   Start n10-192.168.31.15="Start n10r2"
+INFO[01-15|09:25:11] Worker                                   Start n10-192.168.31.15="Run n10r2 init script"
 Started watchfrr
 Cannot find device "root"
 Cannot find device "root"
 Cannot find device "root"
 Cannot find device "root"
-INFO[01-09|04:30:32] Worker                                   Start n10-192.168.31.
-15="Start n10h0"
-INFO[01-09|04:30:33] Worker                                   Start n10-192.168.31.
-15="Run n10h0 init script"
-INFO[01-09|04:30:34] Scheduler                                Resource Collector="&
-{CPU:220651 MEM:408694784 DISK:0 KeyResource:0}" Server=192.168.31.15
+INFO[01-15|09:25:12] Worker                                   Start n10-192.168.31.15="Start n10r3"
+INFO[01-15|09:25:13] Worker                                   Start n10-192.168.31.15="Run n10r3 init script"
+Started watchfrr
+Cannot find device "root"
+Cannot find device "root"
+INFO[01-15|09:25:14] Worker                                   Start n10-192.168.31.15="Start n10r4"
+INFO[01-15|09:25:15] Worker                                   Start n10-192.168.31.15="Run n10r4 init script"
+Started watchfrr
+Cannot find device "root"
+INFO[01-15|09:25:17] Worker                                   Start n10-192.168.31.15="Start n10r5"
+INFO[01-15|09:25:17] Worker                                   Start n10-192.168.31.15="Run n10r5 init script"
+INFO[01-15|09:25:18] Scheduler                                Resource Collector="&{CPU:184457 MEM:341860352 DISK:0 KeyResou
+rce:0}" Server=192.168.31.15
+Started watchfrr
+Cannot find device "root"
+Cannot find device "root"
+INFO[01-15|09:25:19] Worker                                   Start n10-192.168.31.15="Start n10h0"
+INFO[01-15|09:25:20] Worker                                   Start n10-192.168.31.15="Run n10h0 init script"
 /home/init.sh: line 3: snmpd: command not found
 /home/init.sh: line 9: tc: command not found
 /home/init.sh: line 10: tc: command not found
-INFO[01-09|04:30:34] Worker                                   Start n10-192.168.31.
-15="Start n10h1"
-INFO[01-09|04:30:35] Worker                                   Start n10-192.168.31.
-15="Run n10h1 init script"
+INFO[01-15|09:25:20] Worker                                   Start n10-192.168.31.15="Start n10h1"
+INFO[01-15|09:25:21] Worker                                   Start n10-192.168.31.15="Run n10h1 init script"
 /home/init.sh: line 3: snmpd: command not found
 /home/init.sh: line 9: tc: command not found
 /home/init.sh: line 10: tc: command not found
-INFO[01-09|04:30:35] Worker                                   Start n10-192.168.31.
-15="Start n10h2"
-INFO[01-09|04:30:36] Worker                                   Start n10-192.168.31.
-15="Run n10h2 init script"
+INFO[01-15|09:25:21] Worker                                   Start n10-192.168.31.15="Start n10h2"
+INFO[01-15|09:25:22] Worker                                   Start n10-192.168.31.15="Run n10h2 init script"
 /home/init.sh: line 3: snmpd: command not found
 /home/init.sh: line 9: tc: command not found
 /home/init.sh: line 10: tc: command not found
-INFO[01-09|04:30:36] Worker                                   Start n10-192.168.31.
-15="Start n10h3"
-INFO[01-09|04:30:37] Worker                                   Start n10-192.168.31.
-15="Run n10h3 init script"
+INFO[01-15|09:25:22] Worker                                   Start n10-192.168.31.15="Start n10h3"
+INFO[01-15|09:25:23] Worker                                   Start n10-192.168.31.15="Run n10h3 init script"
 /home/init.sh: line 3: snmpd: command not found
 /home/init.sh: line 9: tc: command not found
 /home/init.sh: line 10: tc: command not found
-INFO[01-09|04:30:38] Worker                                   Start n10-192.168.31.
-15=Done
-INFO[01-09|04:30:38] Worker n10(start) done
-INFO[01-09|04:30:38] NETID                                    n10=nil LOG15_ERROR="
-Normalized odd number of arguments by adding nil"
-EROR[01-09|04:30:38] PodManager                               UpdateConfigDbAppStat
-us="dial tcp: lookup 192.168.311.171: no such host"
-INFO[01-09|04:30:39] STATUS                                   LOG15_ERROR= LOG15_ER
-ROR="Normalized odd number of arguments by adding nil"
-INFO[01-09|04:30:39] Worker n10-n10-192.168.31.15(stop) started
-INFO[01-09|04:30:39] Worker                                   Stop n10-192.168.31.1
-5=Started
-INFO[01-09|04:30:39] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r0"
-INFO[01-09|04:30:44] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r1"
-INFO[01-09|04:30:45] Scheduler                                Resource Collector="&
-{CPU:99016 MEM:423043072 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:30:49] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r2"
-INFO[01-09|04:30:51] PodManager                               CollectPodRunningInfo
-="{CPU:0 MEM:362770432 DISK:0 KeyResource:0}" App=n10
-INFO[01-09|04:30:53] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r3"
-INFO[01-09|04:30:56] Scheduler                                Resource Collector="&
-{CPU:58974 MEM:295845888 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:30:57] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r4"
-INFO[01-09|04:31:02] Worker                                   Stop n10-192.168.31.1
-5="Stop n10r5"
-INFO[01-09|04:31:07] Worker                                   Stop n10-192.168.31.1
-5="Stop n10h0"
-INFO[01-09|04:31:07] Scheduler                                Resource Collector="&
-{CPU:84 MEM:90611712 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:31:10] Worker                                   Stop n10-192.168.31.1
-5="Stop n10h1"
-INFO[01-09|04:31:14] Worker                                   Stop n10-192.168.31.1
-5="Stop n10h2"
-INFO[01-09|04:31:18] Worker                                   Stop n10-192.168.31.1
-5="Stop n10h3"
-INFO[01-09|04:31:18] Scheduler                                Resource Collector="&
-{CPU:12047 MEM:23351296 DISK:0 KeyResource:0}" Server=192.168.31.15
-INFO[01-09|04:31:22] Worker                                   Stop n10-192.168.31.1
-5=Done
-INFO[01-09|04:31:22] Worker n10(stop) done
-INFO[01-09|04:31:22] NETID                                    n10=nil LOG15_ERROR="
-Normalized odd number of arguments by adding nil"
-EROR[01-09|04:31:22] PodManager                               UpdateConfigDbAppStat
-us="dial tcp: lookup 192.168.311.171: no such host"
-INFO[01-09|04:31:23] STATUS                                   LOG15_ERROR= LOG15_ER
-ROR="Normalized odd number of arguments by adding nil"
-INFO[01-09|04:31:23] Worker n10-n10-192.168.31.15(delete) started
-INFO[01-09|04:31:23] Worker                                   Delete n10-192.168.31
-.15=Started
-INFO[01-09|04:31:23] Worker                                   Delete n10-192.168.31
-.15="Delete n10r0"
-INFO[01-09|04:31:23] Worker                                   Delete n10-192.168.31
-.15="Delete n10r1"
-INFO[01-09|04:31:24] Worker                                   Delete n10-192.168.31
-.15="Delete n10r2"
-INFO[01-09|04:31:24] Worker                                   Delete n10-192.168.31
-.15="Delete n10r3"
-INFO[01-09|04:31:24] Worker                                   Delete n10-192.168.31
-.15="Delete n10r4"
-INFO[01-09|04:31:24] Worker                                   Delete n10-192.168.31
-.15="Delete n10r5"
-INFO[01-09|04:31:25] Worker                                   Delete n10-192.168.31
-.15="Delete n10h0"
-INFO[01-09|04:31:25] Worker                                   Delete n10-192.168.31
-.15="Delete n10h1"
-INFO[01-09|04:31:25] Worker                                   Delete n10-192.168.31
-.15="Delete n10h2"
-INFO[01-09|04:31:26] Worker                                   Delete n10-192.168.31
-.15="Delete n10h3"
-INFO[01-09|04:31:26] Worker                                   Delete n10-192.168.31
-.15="Delete ManageBrn10"
-INFO[01-09|04:31:26] Worker                                   Delete n10-192.168.31
-.15="Delete veths"
-INFO[01-09|04:31:27] Worker                                   Delete n10-192.168.31
-.15=Done
-INFO[01-09|04:31:27] Worker n10(delete) done
-INFO[01-09|04:31:27] NETID                                    n10=nil LOG15_ERROR="
-Normalized odd number of arguments by adding nil"
-EROR[01-09|04:31:27] PodManager                               UpdateConfigDbAppStat
-us="dial tcp: lookup 192.168.311.171: no such host"
+INFO[01-15|09:25:23] Worker                                   Start n10-192.168.31.15=Done
+INFO[01-15|09:25:23] Worker n10(start) done
+INFO[01-15|09:25:23] NETID                                    n10=nil LOG15_ERROR="Normalized odd number of arguments by add
+ing nil"
+EROR[01-15|09:25:23] PodManager                               UpdateConfigDbAppStatus="dial tcp: lookup 192.168.311.171: no
+such host"
+INFO[01-15|09:25:29] Scheduler                                Resource Collector="&{CPU:206371 MEM:486043648 DISK:0 KeyResou
+rce:0}" Server=192.168.31.15
+INFO[01-15|09:25:35] PodManager                               CollectPodRunningInfo="{CPU:0 MEM:486043648 DISK:0 KeyResource
+:0}" App=n10
+INFO[01-15|09:25:36] STATUS                                   LOG15_ERROR= LOG15_ERROR="Normalized odd number of arguments b
+y adding nil"
+INFO[01-15|09:25:36] Worker n10-n10-192.168.31.15(stop) started
+INFO[01-15|09:25:36] Worker                                   Stop n10-192.168.31.15=Started
+INFO[01-15|09:25:36] Worker                                   Stop n10-192.168.31.15="Stop n10r0"
+INFO[01-15|09:25:40] Scheduler                                Resource Collector="&{CPU:61865 MEM:490598400 DISK:0 KeyResour
+ce:0}" Server=192.168.31.15
+INFO[01-15|09:25:41] Worker                                   Stop n10-192.168.31.15="Stop n10r1"
+INFO[01-15|09:25:46] Worker                                   Stop n10-192.168.31.15="Stop n10r2"
+INFO[01-15|09:25:50] Worker                                   Stop n10-192.168.31.15="Stop n10r3"
+INFO[01-15|09:25:51] Scheduler                                Resource Collector="&{CPU:11324 MEM:287977472 DISK:0 KeyResour
+ce:0}" Server=192.168.31.15
+INFO[01-15|09:25:55] Worker                                   Stop n10-192.168.31.15="Stop n10r4"
+INFO[01-15|09:26:00] Worker                                   Stop n10-192.168.31.15="Stop n10r5"
+INFO[01-15|09:26:02] Scheduler                                Resource Collector="&{CPU:49090 MEM:157446144 DISK:0 KeyResour
+ce:0}" Server=192.168.31.15
+INFO[01-15|09:26:04] Worker                                   Stop n10-192.168.31.15="Stop n10h0"
+INFO[01-15|09:26:08] Worker                                   Stop n10-192.168.31.15="Stop n10h1"
+INFO[01-15|09:26:12] Worker                                   Stop n10-192.168.31.15="Stop n10h2"
+INFO[01-15|09:26:13] Scheduler                                Resource Collector="&{CPU:12586 MEM:45965312 DISK:0 KeyResourc
+e:0}" Server=192.168.31.15
+INFO[01-15|09:26:15] Worker                                   Stop n10-192.168.31.15="Stop n10h3"
+INFO[01-15|09:26:19] Worker                                   Stop n10-192.168.31.15=Done
+INFO[01-15|09:26:19] Worker n10(stop) done
+INFO[01-15|09:26:19] NETID                                    n10=nil LOG15_ERROR="Normalized odd number of arguments by add
+ing nil"
+EROR[01-15|09:26:19] PodManager                               UpdateConfigDbAppStatus="dial tcp: lookup 192.168.311.171: no
+such host"
+INFO[01-15|09:26:24] Scheduler                                Resource Collector="&{CPU:0 MEM:0 DISK:0 KeyResource:0}" Serve
+r=192.168.31.15
+INFO[01-15|09:26:33] STATUS                                   LOG15_ERROR= LOG15_ERROR="Normalized odd number of arguments b
+y adding nil"
+INFO[01-15|09:26:34] Worker n10-n10-192.168.31.15(delete) started
+INFO[01-15|09:26:34] Worker                                   Delete n10-192.168.31.15=Started
+INFO[01-15|09:26:34] Worker                                   Delete n10-192.168.31.15="Delete n10r0"
+INFO[01-15|09:26:34] Worker                                   Delete n10-192.168.31.15="Delete n10r1"
+INFO[01-15|09:26:34] Worker                                   Delete n10-192.168.31.15="Delete n10r2"
+INFO[01-15|09:26:35] Scheduler                                Resource Collector="&{CPU:0 MEM:0 DISK:0 KeyResource:0}" Serve
+r=192.168.31.15
+INFO[01-15|09:26:35] Worker                                   Delete n10-192.168.31.15="Delete n10r3"
+INFO[01-15|09:26:35] Worker                                   Delete n10-192.168.31.15="Delete n10r4"
+INFO[01-15|09:26:35] PodManager                               CollectPodRunningInfo="{CPU:0 MEM:0 DISK:0 KeyResource:0}" App
+=n10
+INFO[01-15|09:26:35] Worker                                   Delete n10-192.168.31.15="Delete n10r5"
+INFO[01-15|09:26:35] Worker                                   Delete n10-192.168.31.15="Delete n10h0"
+INFO[01-15|09:26:36] Worker                                   Delete n10-192.168.31.15="Delete n10h1"
+INFO[01-15|09:26:36] Worker                                   Delete n10-192.168.31.15="Delete n10h2"
+INFO[01-15|09:26:36] Worker                                   Delete n10-192.168.31.15="Delete n10h3"
+INFO[01-15|09:26:36] Worker                                   Delete n10-192.168.31.15="Delete ManageBrn10"
+INFO[01-15|09:26:37] Worker                                   Delete n10-192.168.31.15="Delete veths"
+INFO[01-15|09:26:37] Worker                                   Delete n10-192.168.31.15=Done
+INFO[01-15|09:26:37] Worker n10(delete) done
+INFO[01-15|09:26:37] NETID                                    n10=nil LOG15_ERROR="Normalized odd number of arguments by add
+ing nil"
+EROR[01-15|09:26:37] PodManager                               UpdateConfigDbAppStatus="dial tcp: lookup 192.168.311.171: no
+such host"
 

@@ -29,16 +29,43 @@ tmux send -t inputer "cd ~/dengli/nettopbuilder&&curl -X POST http://localhost:8
 #examine if the creating process is done
 rm -rf simple.txt
 rm -rf output.txt
+#tmux detach
+tmux send -t 0 "tmux detach" ENTER
 tmux attach
 tmux capture-pane -t builder -S -
 tmux save-buffer output.txt
+#tmux show-buffer
+#tmux send -t 0 "tmux detach" ENTER
 
 grep '(create) started' output.txt
 grep '(create) started' output.txt >>simple.txt
+
+
 while(!(grep '(create) done' output.txt))
 do
 	tmux capture-pane -t builder -S -
 	tmux save-buffer output.txt
+	tmux show-buffer
+#cpu info
+	rm -rf cpu.txt
+	
+	echo "create:"
+	echo "create:">>cpu.txt
+	b=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 13}'`
+	if [ $b -ge 80 ];then
+	        echo "cpu >80%,restart server----------------" >>cpu.txt
+	else
+		        #echo "`date +%x%T ` cpu:$b"
+			        echo "`date` cpu:$b%"
+				        echo "`date` cpu:$b%">>cpu.txt
+				fi
+				#
+
+	c=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 4}'`
+	d=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 3}'`
+	echo "`date` Free memory:$c KB , Swpd memory: $d KB"
+	echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
+        sleep 1
 done
 grep '(create) done' output.txt >> simple.txt
 echo "window inputer create done"
@@ -48,42 +75,120 @@ sleep 1
 
 tmux send -t inputer "curl http://localhost:8083/1.0/action/start/n${num}" ENTER
 echo "waiting for the starting process"
+#tmux detach
+
+tmux send -t 0 "tmux detach" ENTER
 tmux attach
 tmux capture-pane -t builder -S -
 tmux save-buffer output.txt
 
+
+
 grep '(start) started' output.txt 
 grep '(start) started' output.txt >> simple.txt
+
+
 
 while(!(grep '(start) done' output.txt ))
 do
 	        tmux capture-pane -t builder -S -
-		        tmux save-buffer output.txt
+		tmux save-buffer output.txt
+		
+		tmux show-buffer
+		#
+		#cpu info
+		
+		echo "start:"
+		echo "start:">>cpu.txt
+		b=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 13}'`
+		if [ $b -ge 80 ];
+		then        echo "cpu >80%,restart server----------------" >>cpu.txt
+		else
+			#echo "`date +%x%T ` cpu:$b"
+			echo "`date` cpu:$b%"
+			echo "`date` cpu:$b%">>cpu.txt
+		fi
+
+		#
+		 c=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 4}'`
+		         d=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 3}'`
+			         echo "`date` Free memory:$c KB , Swpd memory: $d KB"
+				 echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
+
+				sleep 1
 done    
 grep '(start) done' output.txt >> simple.txt
 
 echo "window inputer start done"
 
 #
+echo "continue? Y or N"
+#var1="N"
+#var2="n"
+#read flag
+#if [$flag="N"];
+#then exit	
+#fi
 
-sleep 1
 
+read flag    
+if [ $flag = "Y" ] ; then    
+	echo "get Y"
+elif [ $flag = "y" ] ; then  
+	echo "get y"
+elif [ $flag = "N" ] ; then
+	echo "get N"
+	exit
+elif [$flag="n"];then
+	echo "get n"
+	exit
+else 
+	echo "continue"
+fi     #ifend
 
 #change window to tmux to view results
 #stopping process the same way to code
 tmux send -t inputer "curl http://localhost:8083/1.0/action/stop/n${num}" ENTER
 echo "waiting for the stopping process"
+#tmux detach
+
+tmux send -t 0 "tmux detach" ENTER
 tmux attach
 tmux capture-pane -t builder -S -
 tmux save-buffer output.txt
+
+
+
 
 grep '(stop) started' output.txt 
 grep '(stop) started' output.txt >> simple.txt
 
 while(!(grep '(stop) done' output.txt))
 do
-	    tmux capture-pane -t builder -S -
+
+       	tmux capture-pane -t builder -S -
             tmux save-buffer output.txt
+	    tmux show-buffer
+	#cpu info
+	#rm -rf cpu.txt
+
+	echo "stop:"
+	echo "stop:">>cpu.txt
+	b=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 13}'`
+	if [ $b -ge 80 ];then
+		echo "cpu >80%,restart server----------------" >>cpu.txt
+	else
+		#echo "`date +%x%T ` cpu:$b"
+		echo "`date` cpu:$b%"
+		echo "`date` cpu:$b%">>cpu.txt
+	fi
+	#
+
+         c=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 4}'`
+         d=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 3}'`
+	 echo "`date` Free memory:$c KB , Swpd memory: $d KB"
+	 echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
+	sleep 1
 done
 grep '(stop) done' output.txt >> simple.txt
 
@@ -94,9 +199,14 @@ sleep 1
 
 tmux send -t inputer "curl http://localhost:8083/1.0/action/destroy/n${num}" ENTER
 echo "waiting for the destroying process"
+
+tmux send -t 0 "tmux detach" ENTER
 tmux attach
 tmux capture-pane -t builder -S -
 tmux save-buffer output.txt
+
+
+
 
 grep '(delete) started' output.txt
 grep '(delete) started' output.txt >> simple.txt
@@ -105,6 +215,28 @@ while(!(grep '(delete) done' output.txt ))
 do
 	     tmux capture-pane -t builder -S -
 	     tmux save-buffer output.txt
+	     
+	     tmux show-buffer
+	     #cpu info
+	#rm -rf cpu.txt
+
+	echo "delete:"
+	echo "delete:">>cpu.txt
+        b=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 13}'`
+	if [ $b -ge 80 ];then
+		echo "cpu >80%,restart server----------------" >>cpu.txt
+	else
+		#echo "`date +%x%T ` cpu:$b"
+		echo "`date` cpu:$b%"
+		echo "`date` cpu:$b%">>cpu.txt
+	fi
+	#     
+ c=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 4}'`
+ d=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 3}'`
+ echo "`date` Free memory:$c KB , Swpd memory: $d KB"
+ echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
+ sleep 1
+
 done
 grep '(delete) done' output.txt >> simple.txt
 
@@ -127,9 +259,11 @@ cd ~/dengli/nettopbuilder
 ./reset_all.sh
 
 tmux send -t inputer "exit" ENTER
-tmux send -t 0 "exit" ENTER
+
 tmux send -t builder "exit" ENTER
 
+tmux send -t 0 "exit" ENTER
+tmux kill-server
 
 
 
