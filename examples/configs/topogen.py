@@ -203,8 +203,8 @@ def checkTopo(name, topo):
     print("{} Check OK!".format(name))
     return True
 
-name = "n10"
-node_num = 10
+name = "n100"
+node_num = 100
 router_num = int(0.6 * node_num)
 host_num = node_num - router_num
 

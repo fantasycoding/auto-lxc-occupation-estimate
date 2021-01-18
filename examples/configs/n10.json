@@ -7,19 +7,13 @@
             "interfaces": [
                 {
                     "name": "r0-eth0",
-                    "ip": "10.0.1.1",
-                    "mask": "24",
-                    "bw": "1000"
-                },
-                {
-                    "name": "r0-eth1",
                     "ip": "10.0.5.1",
                     "mask": "24",
                     "bw": "1000"
                 },
                 {
-                    "name": "r0-eth2",
-                    "ip": "10.0.8.1",
+                    "name": "r0-eth1",
+                    "ip": "10.0.7.1",
                     "mask": "24",
                     "bw": "1000"
                 }
@@ -33,7 +27,20 @@
         {
             "name": "r1",
             "category": "VirRouter",
-            "interfaces": [],
+            "interfaces": [
+                {
+                    "name": "r1-eth0",
+                    "ip": "10.0.1.1",
+                    "mask": "24",
+                    "bw": "1000"
+                },
+                {
+                    "name": "r1-eth1",
+                    "ip": "10.0.8.1",
+                    "mask": "24",
+                    "bw": "1000"
+                }
+            ],
             "routings": {
                 "ospf": [
                     "network 0.0.0.0/0 area 0"
@@ -46,25 +53,13 @@
             "interfaces": [
                 {
                     "name": "r2-eth0",
-                    "ip": "10.0.1.2",
+                    "ip": "10.0.3.1",
                     "mask": "24",
                     "bw": "1000"
                 },
                 {
                     "name": "r2-eth1",
-                    "ip": "10.0.4.1",
-                    "mask": "24",
-                    "bw": "1000"
-                },
-                {
-                    "name": "r2-eth2",
-                    "ip": "10.0.5.1",
-                    "mask": "24",
-                    "bw": "1000"
-                },
-                {
-                    "name": "r2-eth3",
-                    "ip": "10.0.6.1",
+                    "ip": "10.0.2.1",
                     "mask": "24",
                     "bw": "1000"
                 }
@@ -81,13 +76,25 @@
             "interfaces": [
                 {
                     "name": "r3-eth0",
-                    "ip": "10.0.4.2",
+                    "ip": "10.0.3.2",
                     "mask": "24",
                     "bw": "1000"
                 },
                 {
                     "name": "r3-eth1",
-                    "ip": "10.0.2.1",
+                    "ip": "10.0.4.1",
+                    "mask": "24",
+                    "bw": "1000"
+                },
+                {
+                    "name": "r3-eth2",
+                    "ip": "10.0.5.1",
+                    "mask": "24",
+                    "bw": "1000"
+                },
+                {
+                    "name": "r3-eth3",
+                    "ip": "10.0.6.1",
                     "mask": "24",
                     "bw": "1000"
                 }
@@ -101,14 +108,7 @@
         {
             "name": "r4",
             "category": "VirRouter",
-            "interfaces": [
-                {
-                    "name": "r4-eth0",
-                    "ip": "10.0.7.1",
-                    "mask": "24",
-                    "bw": "1000"
-                }
-            ],
+            "interfaces": [],
             "routings": {
                 "ospf": [
                     "network 0.0.0.0/0 area 0"
@@ -127,7 +127,19 @@
                 },
                 {
                     "name": "r5-eth1",
+                    "ip": "10.0.1.2",
+                    "mask": "24",
+                    "bw": "1000"
+                },
+                {
+                    "name": "r5-eth2",
                     "ip": "10.0.2.2",
+                    "mask": "24",
+                    "bw": "1000"
+                },
+                {
+                    "name": "r5-eth3",
+                    "ip": "10.0.4.2",
                     "mask": "24",
                     "bw": "1000"
                 }
@@ -197,35 +209,39 @@
     "links": [
         {
             "from": "r0-eth0",
-            "to": "r2-eth0"
-        },
-        {
-            "from": "r0-eth1",
             "to": "r5-eth0"
         },
         {
-            "from": "r0-eth2",
-            "to": "h3-eth0"
+            "from": "r0-eth1",
+            "to": "h2-eth0"
         },
         {
-            "from": "r2-eth1",
-            "to": "r3-eth0"
-        },
-        {
-            "from": "r2-eth2",
-            "to": "h0-eth0"
-        },
-        {
-            "from": "r2-eth3",
-            "to": "h1-eth0"
-        },
-        {
-            "from": "r3-eth1",
+            "from": "r1-eth0",
             "to": "r5-eth1"
         },
         {
-            "from": "r4-eth0",
-            "to": "h2-eth0"
+            "from": "r1-eth1",
+            "to": "h3-eth0"
+        },
+        {
+            "from": "r2-eth0",
+            "to": "r3-eth0"
+        },
+        {
+            "from": "r2-eth1",
+            "to": "r5-eth2"
+        },
+        {
+            "from": "r3-eth1",
+            "to": "r5-eth3"
+        },
+        {
+            "from": "r3-eth2",
+            "to": "h0-eth0"
+        },
+        {
+            "from": "r3-eth3",
+            "to": "h1-eth0"
         }
     ]
 }

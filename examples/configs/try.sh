@@ -13,6 +13,9 @@ python3 topogen.py
 #new window -s name -d move to backconsole 
 #perfect suffix -d makes process simple
 
+rm -rf simple.txt
+rm -rf output.txt
+
 #window builder
 tmux new -s topogen -d
 tmux new-window -n builder -d  
@@ -24,11 +27,15 @@ tmux new-window -n inputer -d
 sleep 2
 
 #window inputer
+tmux capture-pane -t builder -S -
 tmux send -t inputer "cd ~/dengli/nettopbuilder&&curl -X POST http://localhost:8083/1.0/config/n${num} --data @examples/configs/n${num}.json&&sleep 2&&curl http://localhost:8083/1.0/action/create/n${num}"  ENTER 
 
+tmux save-buffer output.txt
+
 #examine if the creating process is done
-rm -rf simple.txt
-rm -rf output.txt
+tmux capture-pane -t builder -S -
+tmux save-buffer output.txt
+
 #tmux detach
 tmux send -t 0 "tmux detach" ENTER
 tmux attach
@@ -37,9 +44,20 @@ tmux save-buffer output.txt
 #tmux show-buffer
 #tmux send -t 0 "tmux detach" ENTER
 
-grep '(create) started' output.txt
-grep '(create) started' output.txt >>simple.txt
 
+
+sleep 1
+
+
+#  Worker n10-n10-192.168.31.15(create) started
+#grep '(create) started' output.txt
+while(!(grep '(create) started' output.txt))
+	do
+		tmux capture-pane -t builder -S -
+		tmux save-buffer output.txt
+		tmux show-buffer
+		grep '(create) started' output.txt >>simple.txt
+	done
 
 while(!(grep '(create) done' output.txt))
 do
@@ -48,7 +66,7 @@ do
 	tmux show-buffer
 #cpu info
 	rm -rf cpu.txt
-	
+	echo "cpu-n${num}" >> cpu.txt
 	echo "create:"
 	echo "create:">>cpu.txt
 	b=`vmstat 1 |head -n 4 |tail -n 1 |awk '{print $ 13}'`
@@ -67,6 +85,9 @@ do
 	echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
         sleep 1
 done
+
+sleep 2
+#grep '(create) started' output.txt >>simple.txt
 grep '(create) done' output.txt >> simple.txt
 echo "window inputer create done"
 
@@ -83,9 +104,10 @@ tmux capture-pane -t builder -S -
 tmux save-buffer output.txt
 
 
+sleep 5
 
 grep '(start) started' output.txt 
-grep '(start) started' output.txt >> simple.txt
+#grep '(start) started' output.txt >> simple.txt
 
 
 
@@ -117,34 +139,30 @@ do
 
 				sleep 1
 done    
+grep '(start) started' output.txt >> simple.txt
 grep '(start) done' output.txt >> simple.txt
 
 echo "window inputer start done"
 
 #
-echo "continue? Y or N"
-#var1="N"
-#var2="n"
-#read flag
-#if [$flag="N"];
-#then exit	
-#fi
+      #echo "continue? Y or N"
 
 
-read flag    
-if [ $flag = "Y" ] ; then    
-	echo "get Y"
-elif [ $flag = "y" ] ; then  
-	echo "get y"
-elif [ $flag = "N" ] ; then
-	echo "get N"
-	exit
-elif [$flag="n"];then
-	echo "get n"
-	exit
-else 
-	echo "continue"
-fi     #ifend
+
+#read flag    
+#if [ $flag = "Y" ] ; then    
+#	echo "get Y"
+#elif [ $flag = "y" ] ; then  
+#	echo "get y"
+#elif [ $flag = "N" ] ; then
+#	echo "get N"
+#	exit
+#elif [$flag="n"];then
+#	echo "get n"
+#	exit
+#else 
+#	echo "continue"
+#fi     #ifend
 
 #change window to tmux to view results
 #stopping process the same way to code
@@ -159,9 +177,10 @@ tmux save-buffer output.txt
 
 
 
+sleep 5
 
 grep '(stop) started' output.txt 
-grep '(stop) started' output.txt >> simple.txt
+#grep '(stop) started' output.txt >> simple.txt
 
 while(!(grep '(stop) done' output.txt))
 do
@@ -190,6 +209,7 @@ do
 	 echo "`date` Free memory:$c KB , Swpd memory: $d KB">>cpu.txt
 	sleep 1
 done
+grep '(stop) started' output.txt >> simple.txt
 grep '(stop) done' output.txt >> simple.txt
 
       echo "window inputer stop done"
@@ -207,9 +227,11 @@ tmux save-buffer output.txt
 
 
 
+sleep 5
+
 
 grep '(delete) started' output.txt
-grep '(delete) started' output.txt >> simple.txt
+#grep '(delete) started' output.txt >> simple.txt
 
 while(!(grep '(delete) done' output.txt ))
 do
@@ -238,6 +260,8 @@ do
  sleep 1
 
 done
+grep '(delete) started' output.txt >> simple.txt
+
 grep '(delete) done' output.txt >> simple.txt
 
       echo "window inputer delete done"
